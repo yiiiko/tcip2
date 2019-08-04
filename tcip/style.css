@@ -1,0 +1,744 @@
+@font-face {
+   font-family: Avenir Next;
+   src: url('Avenir Next.ttc') format('Ultra Light');
+}
+
+*{
+  margin:0;
+  color:white;
+  font-family: Avenir Next;
+/*  background: url(img/backGround.png) no-repeat fixed;
+  background-size: 1050px;
+  background-position: 225px 310px;*/
+}
+
+#mainData{
+  position:fixed;
+}
+
+#titleBar{
+  top:0;
+  width:100%;
+  height:40px;
+  position:fixed;
+  text-align: center;
+  background-color: #153b58;
+  display:none;
+}
+
+#titleBar p{
+  padding-top: 10px;
+  font-size: 1.2em;
+  font-family: Avenir Next;
+}
+
+#line{
+  width:500px;
+  height:3px;
+  position: relative;
+  left: -90px;
+  /* margin-top:3.5%; */
+  background-color: white;
+  display:none;
+}
+
+/* #line2{
+  width:300px;
+  height:1px;
+  position: fixed;
+  margin-left: 0;
+  margin-top:9.5%;
+  background-color: white;
+  display:none;
+} */
+
+/*style input field on first page*/
+#boxOp{
+  position:fixed;
+  width:100%;
+  height:50%;
+  left:0;
+  top:55%;
+  background-color: #153b58;
+}
+
+#lineOp{
+  position:fixed;
+  width:10px;
+  height:300px;
+  /*height:75px;*/
+  background-color: white;
+  top:40.25%;
+  margin-left:38.5%;
+}
+
+#billInfo{
+  font-size: 1.5em;
+  text-align: left;
+  display:block;
+  padding-top:20%;
+  padding-left: 40%;
+  -webkit-transition:0.5s ease;
+}
+#billInfo.trans{
+  display:none;
+  transition:0.5s ease;
+}
+
+input{
+  border:1px solid white;
+}
+
+#billAmount{
+  padding:5px;
+  width:200px;
+  background-color: #3973a0;
+}
+
+/*change color of placeholder text*/
+::-webkit-input-placeholder {
+    color: white;
+    text-align: center;
+    opacity:0.7;
+}
+
+#submit{
+  padding:5px;
+  margin-left: 16px;
+  width:213px;
+  background-color: #3973a0;
+  transition:0.5s ease;
+}
+#submit:hover{
+ background-color: white;
+ color:#3973a0;
+ transition:0.5s ease;
+}
+
+
+
+body {
+  font: 14px sans-serif;
+  text-align:center;
+  padding-top:50px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #3973a0;
+}
+
+
+#content{
+  display:none;
+  transition:0.5s ease;
+}
+
+
+
+
+
+
+#secondTitle{
+  position:fixed;
+  text-align:justify;
+  margin-left: 30%;
+  display:none;
+}
+
+#qualInfo{
+  position:fixed;
+  text-align:justify;
+  margin-left: 30%;
+  margin-top: 45%;
+  display:none;
+}
+
+#qualInfo p{
+  font-size: 1.5em;
+}
+
+#sTitle{
+  padding-bottom:10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+
+
+#back{
+  position: fixed;
+  margin-left:15%;
+  display:none;
+}
+
+
+
+
+#menu{
+  position:absolute;
+  margin-left:87%;
+  margin-top:51%;
+  text-align: right;
+  transition:0.5s ease;
+}
+
+#menu img{
+  width:40px;
+  height:40px;
+}
+
+#menu ul{
+  list-style:none;
+  color:white;
+  cursor:pointer;
+  padding:10px;
+  padding-bottom:20px;
+  background-color: #153b58;
+  transition:0.5s ease;
+}
+
+#menu:hover{
+  display:block;
+  position:absolute;
+  margin-top:46%;
+  transition:0.5s ease;
+}
+
+#menu:hover img{
+  opacity:0;
+  transition:0.5s ease;
+}
+
+#menu a:hover{
+  color:red;
+  transition:0.5s ease;
+}
+
+
+
+
+#popUp{
+  position:fixed;
+  margin-left:2%;
+  margin-top:51%;
+  font-weight: bold;
+  text-align: left;
+  background-color: #153b58;
+  padding:10px;
+  padding-bottom:30px;
+  display:none;
+}
+
+
+
+
+
+#eP{
+  transition:0.3s ease;
+  margin-bottom:10px;
+}
+
+#sOver{
+  transition:0.3s ease;
+  margin-bottom:10px;
+}
+
+#eP:hover{
+  color:red;
+  transition:0.3s ease;
+}
+
+#sOver:hover{
+  color:red;
+  transition:0.3s ease;
+}
+
+.menu-content{
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.sidebar{
+  float:left;
+  position:fixed;
+  text-align: left;
+  padding-left: 2%;
+  transition:0.5s ease;
+  width: 50%;
+}
+
+
+.column_whole{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+
+
+#nycTotals{
+  display:inline-block;
+  /* float: left; */
+  height: 100%;
+  vertical-align: top;
+  font-size: 1.1em;
+}
+
+#manipTotals{
+  display:inline-block;
+  /* float: left; */
+  /* margin-left: 5%; */
+  height: 100%;
+  vertical-align: top;
+  font-size: 1.1em;
+
+}
+
+
+#totalTitle{
+  font-weight: bold;
+}
+
+#manipTotalTitle{
+ font-weight: bold;
+}
+
+
+
+
+/*slider handles*/
+#slider-5 a {
+  background: #80bcc0;
+}
+
+#slider-4 a {
+  background: #ac95b2;
+}
+
+#slider-3 a {
+  background: #9ebdd5;
+}
+
+#slider-2 a {
+  background: #e95c67;
+}
+
+#slider-1 a {
+  background: #f69532;
+}
+
+
+
+/*question mark icons*/
+.qIcons img{
+  width:13px;
+  display: inline-block;
+  position: absolute;
+  left:1%;
+}
+
+#Q1{
+ top:33%;
+}
+
+#Q2{
+ top:71%;
+}
+
+#Q3{
+ top:88.5%;
+}
+
+#Q4{
+ top:159%;
+}
+
+#categoryInfo{
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  background-color: rgba(255,255,255,0.9);
+  width:500px;
+  margin-left:-250px;
+  height:300px;
+  margin-top:-150px;
+  transition: ease 0.5s;
+  border-radius: 5px;
+}
+
+#catTitle{
+  color:black;
+  font-style: bold;
+  font-size: 2.0em;
+  padding:20px;
+}
+
+#catBody{
+  color:black;
+  padding: 20px;
+}
+
+#catClose{
+  width:15px;
+  display:inline-block;
+  position:absolute;
+  right: 3%;
+  top: 4%;
+  opacity: 0.5;
+  transition:ease 0.5s;
+}
+
+#catClose:hover{
+  opacity:1;
+  transition:ease 0.5s;
+}
+
+
+
+
+/*color changing circles*/
+.circAll{
+  display:inline-block;
+  padding-left: 3%;
+  padding-right: 1%;
+  padding-top: 1%;
+}
+
+#circ1{
+  background-color: white;
+  width:7px;
+  height:7px;
+  border-radius: 10px;
+  display:none;
+}
+#circ2{
+  background-color: white;
+  width:7px;
+  height:7px;
+  border-radius: 10px;
+  /* margin-top:15px; */
+  display:none;
+}
+#circ3{
+  background-color: white;
+  width:7px;
+  height:7px;
+  border-radius: 10px;
+  /* margin-top:15px; */
+  display:none;
+}
+#circ4{
+  background-color: white;
+  width:7px;
+  height:7px;
+  border-radius: 10px;
+  /* margin-top:16px; */
+  display:none;
+}
+#circ5{
+  background-color: white;
+  width:7px;
+  height:7px;
+  border-radius: 10px;
+  margin-top:53px;
+  display:none;
+}
+#circ6{
+  background-color: white;
+  width:7px;
+  height:7px;
+  border-radius: 10px;
+  margin-top:53px;
+  display:none;
+}
+
+
+
+
+/*PM key*/
+#PMkey{
+  display: inline-block;
+  position:fixed;
+  top:95%;
+  left:45%;
+}
+
+#PMkeycircle{
+  display: inline-block;
+  background-color: white;
+  width:10px;
+  height:10px;
+  border-radius: 5px;
+}
+
+
+/*landgraph title*/
+#landGraphTitle{
+  display: inline-block;
+  position: absolute;
+  left:4%;
+  top:158%;
+}
+
+#landGraphTitle p{
+  /* left:2%; */
+  font-weight: bold;
+}
+
+
+#landGraphPos{
+  position:fixed;
+  bottom:-2%;
+}
+
+
+
+/*emission labels*/
+.CO2{
+  position:fixed;
+  margin-top:355px;
+  margin-left:49%;
+  background-color: white;
+}
+
+.SO2{
+  position:fixed;
+  margin-top:225px;
+  margin-left:49%;
+  background-color: white;
+}
+
+.NOx{
+  position:fixed;
+  margin-top:170px;
+  margin-left:49%;
+  background-color: white;
+}
+
+
+
+
+
+/*nrg source labels*/
+.natGas{
+  position:fixed;
+  margin-top:180px;
+  margin-left:500px;
+}
+
+.coal{
+  position:fixed;
+  margin-top:470px;
+  margin-left:450px;
+}
+
+.nuc{
+  position:fixed;
+  margin-top:650px;
+  margin-left:48.5%;
+}
+
+.wind{
+  position:fixed;
+  margin-top:470px;
+  margin-left:950px;
+}
+
+.solar{
+  position:fixed;
+  margin-top:170px;
+  margin-left:860px;
+}
+
+
+
+/*color swatches for each slider*/
+/*#nGcolor{
+  position: fixed;
+  margin-top:320px;
+  right:34px;
+  width:15px;
+  height:15px;
+  background-color:black;
+}*/
+
+
+
+/*slider labels*/
+#percTitle{
+  position:fixed;
+  text-align: right;
+  right:20px;
+  font-size: 1.5em;
+}
+
+#slider-labels{
+  font-size: 0.9em;
+}
+
+.nGP{
+  position: fixed;
+  margin-top:290px;
+  right:18px;
+}
+
+.cP{
+  position: fixed;
+  margin-top:290px;
+  right:85px;
+}
+
+.nP{
+  position: fixed;
+  margin-top:290px;
+  right:152px;
+}
+
+.wP{
+  position: fixed;
+  margin-top:290px;
+  right:220px;
+}
+
+.sP{
+  position: fixed;
+  margin-top:290px;
+  right:290px;
+}
+
+
+
+#nGnum{
+  position: fixed;
+  margin-top:343px;
+  right:33px;
+}
+
+#Cnum{
+  position: fixed;
+  margin-top:325px;
+  right:100px;
+}
+
+#Nnum{
+  position: fixed;
+  margin-top:325px;
+  right:167px;
+}
+
+#Wnum{
+  position: fixed;
+  margin-top:325px;
+  right:235px;
+}
+
+#Snum{
+  position: fixed;
+  margin-top:325px;
+  right:307px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: white;
+  shape-rendering: crispEdges;
+}
+
+.axis text{
+  font: 10px sans-serif;
+}
+
+.bar {
+  fill: orange;
+}
+
+.solidArc:hover{
+  fill: orangered ;
+}
+
+.solidArc2:hover {
+  fill: orangered ;
+}
+
+.solidArcX:hover {
+  fill: orangered ;
+}
+
+.solidArc {
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.solidArc2 {
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.solidArcX {
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.x.axis path {
+/*  display: none;*/
+}
+
+.aster-score {
+  line-height: 1;
+  font-weight: bold;
+  font-size: 500%;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #dadada;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}

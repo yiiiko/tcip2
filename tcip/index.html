@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="d3.slider.css" media="screen" />
+</head>
+<body>
+	<div id="titleBar">
+		<p>The Comparative Impact Project</p>
+	</div>
+
+	<form id="billInfo">
+		Enter Your Approximate</br>Electrical Bill Payment: </br> $ <input type="number" id="billAmount" placeholder="Average New Yorker: $110">
+		<div>
+			<input id="submit" type="submit" value="enter">
+		</div>
+
+	</form>
+
+	<!-- <div id="line"></div> -->
+
+	<div id="mainData"></div>
+
+	<div id="content">
+		<div class='sidebar'>
+			<div id="totals">
+				<div class="column_whole">
+					<p id="billApprox"></p>
+					<p id="energyAmount"></p>
+				</div>
+
+			</br>
+
+			<div id="line"></div>
+
+			</br>
+
+				<div class = "qIcons">
+					<img id="Q1" src="img/qIcon.png">
+					<img id="Q2" src="img/qIcon.png">
+					<img id="Q3" src="img/qIcon.png">
+					<img id="Q4" src="img/qIcon.png">
+				</div>
+
+				<div id="nycTotals">
+					<p id="totalTitle"></p>
+					<p id="emissionTitle"></p>
+					<p id="totalCO2"></p>
+					<p id="totalSO2"></p>
+					<p id="totalNOx"></p>
+					<p id="totalPM"></p>
+				</br>
+					<p id="healthTitle"></p>
+					<p id="totalHealth"></p>
+				</br>
+					<p id="envirTitle"></p>
+					<p id="totalEnvir"></p>
+				</div>
+
+				<div class="circAll">
+						</br>
+						</br>
+						<div id="circ1"></div>
+						</br>
+						<div id="circ2"></div>
+						</br>
+						<div id="circ3"></div>
+						</br>
+						<div id="circ4"></div>
+						<div id="circ5"></div>
+						<div id="circ6"></div>
+				</div>
+
+				<div id="manipTotals">
+					<p id="manipTotalTitle"></p>
+				</br>
+					<p id="myTotalCO2"></p>
+					<p id="myTotalSO2"></p>
+					<p id="myTotalNOx"></p>
+					<p id="myTotalPM"></p>
+				</br>
+				</br>
+					<p id="myTotalHealth"></p>
+				</br>
+				</br>
+					<p id="myTotalEnvir"></p>
+				</div>
+			</div>
+
+			<div id="landGraphTitle">
+				<p>Land Required (km<sup>2</sup>):<p>
+			</div>
+
+		</div>
+
+		<div id="landGraphPos"></div>
+
+		<div id="categoryInfo">
+			<p id="catTitle">hey</p>
+			<p id="catBody">Body is here</p>
+			<img src="img/close.png" id="catClose">
+		</div>
+
+		<div class="labels">
+
+			<div id="slider-labels">
+				<p id="percTitle">Percent of Total Energy by Source</p>
+				<div id="nGcolor"></div>
+				<p class="nGP">Percent  of</br>Natural</br>Gas</br><p id="nGnum"></p></p>
+				<div id="Ccolor"></div>
+				<p class="cP">Percent  of</br>Coal</br><p id="Cnum"></p></p>
+				<div id="Ncolor"></div>
+				<p class="nP">Percent  of</br>Nuclear</br><p id="Nnum"></p></p>
+				<div id="Wcolor"></div>
+				<p class="wP">Percent  of</br>Wind</br><p id="Wnum"></p></p>
+				<div id="Scolor"></div>
+				<p class="sP">Percent  of</br>Solar</br><p id="Snum"></p></p>
+			</div>
+		</div>
+
+		<div id = "sliders">
+			<div id="slider-1"></div>
+			<div id="slider-2"></div>
+			<div id="slider-3"></div>
+			<div id="slider-4"></div>
+			<div id="slider-5"></div>
+		</div>
+
+		<div id="menu">
+			<img src="img/menu.png" alt="menu-button">
+			<ul class="menu-content">
+				<li id="eP"><a>Equalize Percentages</a></li>
+				<li id="sOver"><a>Start over</a></li>
+			</ul>
+		</div>
+
+		<div id="PMkey">
+			<p><div id="PMkeycircle"></div> = approximately 5 grams of PM</p>
+		</div>
+
+	</div>
+
+	<div id="popUp">
+		<pre  id="popUpText"></pre>
+	</div>
+
+<script src="d3.v3.min.js"></script>
+<script src="d3.slider.js"></script>
+
+<script src="d3.tip.js"></script>
+
+<script src="draw.js" ></script>
+<script src="datasheet.js" ></script>
+
+
+</body>
+</html>
